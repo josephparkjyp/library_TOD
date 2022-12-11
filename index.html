@@ -17,28 +17,8 @@
         <div class="add-book">
             <button type="button" id="add-book-button">+ Add book</button>
         </div>
-        <div class="library">
-            <div class="card">
-                <p>"The Great Gatsby"</p>
-                <p>F. Scott Fitzgerald</p>
-                <p>333 pages</p>
-                <button>Read</button>
-                <button>Remove</button>
-            </div>
-            <div class="card">
-                <p>"The Great Gatsby"</p>
-                <p>F. Scott Fitzgerald</p>
-                <p>333 pages</p>
-                <button>Read</button>
-                <button>Remove</button>
-            </div>
-            <div class="card">
-                <p>"The Great Gatsby"</p>
-                <p>F. Scott Fitzgerald</p>
-                <p>333 pages</p>
-                <button>Read</button>
-                <button>Remove</button>
-            </div>
+        <div id="library">
+            
         </div>
     </div>
 
@@ -46,7 +26,7 @@
 
 
 
-    <div class="add-book-form hidden">
+    <div class="add-book-form">
         <p>Add new book</p>
         <input type="text" id="title" name="title" placeholder="Title">
         <input type="text" id="author" name="author" placeholder="Author">
@@ -57,6 +37,18 @@
         </div>
         <button type="submit" id="submit">Submit</button>
     </div>
+
+
+    <template id="book-template">
+        <div class="card">
+          <p>Title: <span id="book-title"></span></p>
+          <p>Author: <span id="book-author"></span></p>
+          <p>Pages: <span id="book-pages"></span></p>
+        </div>
+    </template>
+
+
+
 
     <script src="scripts.js"></script>
 </body>
