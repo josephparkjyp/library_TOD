@@ -53,7 +53,7 @@ html, body {
     height: 100%;
 }
 
-body {
+body * {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -99,7 +99,7 @@ body {
     background-color:rgba(51, 51, 51, 0.05);
 }
 
-#add-book {
+#add-book-button {
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 8px;
@@ -109,8 +109,59 @@ body {
     padding: 12px;
 }
 
-#add-book:hover {
+#add-book-button:hover {
     background-color: grey;
+}
+
+.add-book-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 300px;
+    height: 380px;
+    background-color:rgba(51, 51, 51, 0.05);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.add-book-form > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.add-book-form > p {
+    margin-top: 20px;
+    font-weight: bold;
+    flex: 1;
+}
+
+#title, #author, #pages {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 240px;
+}
+
+.read-or-unread {
+    flex: 1;
+}
+
+#submit {
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 6px;
+    width: 260px;
+    border-radius: 10px;
+    background-color: lightgreen;
 }
 
 .library {
@@ -119,4 +170,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color:rgba(51, 51, 51, 0.05);
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
 }
